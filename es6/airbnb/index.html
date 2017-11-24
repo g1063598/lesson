@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>let 块级作用域</title>
+</head>
+<body>
+    <script>
+        {
+            // let 定义的变量，具有块级作用域
+            let a = 1;
+        }
+        let b = 33;
+        // console.log(a);
+        try {
+            let b = 4;
+            console.log(b);
+            a++;
+            console.log(a);
+        } catch(e) {
+            console.log(e);
+        }
+        // console.log(b);
+    </script>
+</body>
+</html>

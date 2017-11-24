@@ -1,0 +1,8 @@
+{
+    "presets": [["airbnb",{
+        "targets": {
+            // "explorer": 6
+            "chrome": 50
+        }
+    }]]
+}

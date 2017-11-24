@@ -1,0 +1,25 @@
+{
+  "name": "es6-airbnb",
+  "version": "1.0.0",
+  "description": "用于学习es6，练习airbab规范",
+  "main": "symbol.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nzhingg/qs_js_lesson.git"
+  },
+  "keywords": [
+    "nzhingg"
+  ],
+  "author": "nizihong",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nzhingg/qs_js_lesson/issues"
+  },
+  "homepage": "https://github.com/nzhingg/qs_js_lesson#readme",
+  "devDependencies": {
+    "babel-preset-airbnb": "^2.4.0"
+  }
+}
