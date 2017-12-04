@@ -109,11 +109,11 @@
     height: 142rpx;
 }
 
-.bd__movieStills {
+/* .bd__movieStills {
     position: absolute;
     top: 540rpx;
-}
-.scroll-view__stills {
+} */
+/* .scroll-view__stills {
     width: 100%;
     height: 344rpx;
 }
@@ -124,7 +124,7 @@
 .still {
     width: 220rpx;
     height: 242rpx;
-}
+} */
 
 
 
