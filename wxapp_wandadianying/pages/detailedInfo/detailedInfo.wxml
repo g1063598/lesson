@@ -1,0 +1,52 @@
+<!--pages/detailedInfo/detailedInfo.wxml-->
+<view class="container">
+    <view class="page__hd">
+        <image class="page__hd_movie" src="http://images.wandafilm.com/uploadServer/resource/images/2017/10/20171023111456202326.jpg" />
+        <image class="page__hd_movie-background" src="http://images.wandafilm.com/uploadServer/resource/images/2017/10/20171023111456202326.jpg" />
+        <view class="page__hd_info">
+            <text class="info__movieName">寻梦环游记</text>
+            <text class="info__EnglishName">Coco</text>
+            <text class="info__time">105分钟</text>
+            <text class="info__type">喜剧/动画/冒险</text>
+            <text class="info__showTime">2017年11月24日 中国上映</text>
+            <text class="info__introduction">皮克斯再开脑洞 人鬼同追音乐梦</text>
+        </view>
+        <view class="page__hd_score">
+            <text class="score">9.7</text>
+        </view>
+    </view>
+    <view class="page__bd">
+        <view class="bd__movieSynopsis">影片讲述一个鞋匠家庭出身的12岁小男孩米格尔，自幼有一个音乐梦，但音乐却是被家庭所禁止的，他们认为自己被音乐诅咒了。在米格尔秘密追寻音乐梦时，不小心进入了死亡之地，在这里他遇见了家人们的灵魂，并得到了他们的祝福去歌唱，最终重返人间。</view>
+        <view class="bd__movieParticipants">
+            <scroll-view class="scroll-view_participants" scroll-x="true">
+                <view class="content">
+                <view class="scroll-view__content">
+                    <text class="movieDirector">导演</text>
+                    <image class="directorImage" src="https://gss0.bdstatic.com/-4o3dSag_xI4khGkpoWK1HF6hhy/baike/s%3D235/sign=a17c622eee1190ef05fb95dcfb1a9df7/a71ea8d3fd1f4134b343b7bd2c1f95cad0c85ef8.jpg" />
+                    <text class="director">李．昂克里奇</text> 
+                </view>
+                <view class="scroll-view__content actors">
+                    <text class="movieActors">演员</text>
+                    <image class="actorImage" src="https://gss3.bdstatic.com/7Po3dSag_xI4khGkpoWK1HF6hhy/baike/crop%3D0%2C0%2C1291%2C1291%3Bh%3D240%3Bq%3D95/sign=063483ea9e2bd407568889bd46b9b261/91529822720e0cf3d8da53390346f21fbf09aac6.jpg"/>
+                    <text class="actor">安东尼冈萨</text>
+                </view>
+            </view>
+            </scroll-view>
+        </view>
+        <view class="bd__movieStills">
+            <text class="image">图片</text>
+            <scroll-view class="scroll-view__stills" scroll-x="true">
+                <view class="stills">
+                <image class="still" src="http://images.wandafilm.com/uploadServer/resource/images/2017/09/20170921160954605878.jpg" />
+                <image class="still" src="http://images.wandafilm.com/uploadServer/resource/images/2017/09/20170921160954605878.jpg" />
+                <image class="still" src="http://images.wandafilm.com/uploadServer/resource/images/2017/09/20170921160954605878.jpg" />
+                <image class="still" src="http://images.wandafilm.com/uploadServer/resource/images/2017/09/20170921160954605878.jpg" />
+                <image class="still" src="http://images.wandafilm.com/uploadServer/resource/images/2017/09/20170921160954605878.jpg" />
+            </view>
+            </scroll-view>
+        </view>
+    </view>
+    <view class="page__ft">
+        <view class="ticket">立即购票</view>
+    </view>
+</view>

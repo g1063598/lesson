@@ -1,0 +1,25 @@
+<view class="container">
+  <navigator class="page__hd" url="../cinemas/cinemas">
+      <view class="page__hd_store">当前影院:{{store}}></view>
+      <button class="btn">切换</button>
+  </navigator>
+  <scroll-view class="page__bd" wx:for="{{movies}}" wx:key="{{index}}" scroll-y="true">
+    <navigator class="movies"  url="../detailedInfo/detailedInfo?id={{item.id}}">
+      <view class="item">
+      <view class="movie__hd">
+        <image class="movie" src="{{item.image}}" />
+      </view>
+      <view class="movie__bd">
+        <text class="movie__bd_name">{{item.movieName}}</text>
+        <text class="movie__bd_jd">IMAX3D</text>
+        <text class="movie__bd_introduction">{{item.introduction}}</text>
+        <text class="movie__bd_actor">{{item.actor}}</text>
+      </view>
+      <view class="movie__ft">
+        <text class="movie__ft_score">{{item.score}}</text>
+        <button class="btn big">购票</button>
+      </view>
+    </view>
+    </navigator>
+  </scroll-view>
+</view>

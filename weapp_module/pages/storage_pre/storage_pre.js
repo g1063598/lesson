@@ -7,6 +7,7 @@ Page({
       url: '../storage/storage'
     });
   },
+  
   // 页面加载完成
   onLoad: function(options) {
     console.log('onLoad');

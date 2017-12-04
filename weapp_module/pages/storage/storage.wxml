@@ -4,6 +4,7 @@
     <view>
         <button bindtap="bindSaveAddress">保存</button>
     </view>
+    
     <view>
         <button bindtap="bindClearAddress">清除</button>
     </view>

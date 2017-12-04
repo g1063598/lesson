@@ -1,0 +1,146 @@
+/* pages/detailedInfo/detailedInfo.wxss */
+
+.pege__hd {
+    width: 750rpx;
+    height: 382rpx;
+    position: relative;
+    background-color: pink;
+}
+.page__hd_movie-background {
+    width: 750rpx;
+    height: 150rpx;
+    z-index: 1;
+    filter: blur(10rpx);
+}
+.page__hd_movie {
+    position: absolute;
+    top: 26rpx;
+    left: 20rpx;
+    width: 224rpx;
+    height: 326rpx;
+    z-index: 3;
+}
+.page__hd_info {
+    position: absolute;
+    display: block;
+    left: 260rpx;
+    top: 60rpx;
+}
+.info__movieName {
+    display: block;
+    font-size: 34rpx;
+    color: #FFFFFF;
+    z-index: 5;
+}
+.info__EnglishName {
+    display: block;
+    font-size: 22rpx;
+    margin-top: 18rpx;
+    color: #FFFFFF;
+    z-index: 5;
+}
+.info__time {
+    display: block;
+    font-size: 26rpx;
+    color: #252525;
+    margin-top: 36rpx;
+}
+.info__type {
+    display: block;
+    font-size: 26rpx;
+    color: #252525;
+    margin-top: 26rpx;
+}
+.info__showTime {
+    display: block;
+    font-size: 26rpx;
+    color: #252525;
+    margin-top: 28rpx;
+}
+.info__introduction {
+    display: block;
+    font-size: 24rpx;
+    color: #D9B177;
+    margin-top: 20rpx;
+}
+.page__hd_score {
+    position: absolute;
+    top: 90rpx;
+    right: 44rpx;
+    width: 76rpx;
+    height: 80rpx;
+    background-color: #D9B177;
+    color: #FFFFFF;
+    z-index: 7;
+}
+.score {
+    display: block;
+    margin: 16rpx 12rpx;
+}
+.page__bd {
+    position: relative;
+    top: 230rpx;
+    background-color: pink;
+}
+.bd__movieSynopsis {
+    position: absolute;
+    background-color: #FFFFFF;
+    padding: 24rpx;
+    font-size: 26rpx;
+    color: #252525;
+}
+.bd__movieParticipants {
+    width: 750rpx;
+    height: 320rpx;
+    background-color: #FFFFFF;
+}
+.scroll-view_participants {
+    width: 100%;
+    position: absolute;
+    height: 320rpx;
+    top: 250rpx;
+}
+.scroll-view__content {
+    width: 160rpx;
+    height: 320rpx;
+}
+.directorImage {
+    width: 142rpx;
+    height: 142rpx;
+}
+
+.bd__movieStills {
+    position: absolute;
+    top: 540rpx;
+}
+.scroll-view__stills {
+    width: 100%;
+    height: 344rpx;
+}
+.stills {
+    width: 100%;
+    height: 344rpx;
+}
+.still {
+    width: 220rpx;
+    height: 242rpx;
+}
+
+
+
+
+
+
+.page__ft {
+    bottom: 0;
+    width: 750rpx;
+    height: 98rpx;
+    position: fixed;
+    background-color: #DEAE72;
+}
+.ticket {
+    text-align: center;
+    font-size: 26rpx;
+    padding-top: 36rpx;
+    color: #FFFFFF;
+}

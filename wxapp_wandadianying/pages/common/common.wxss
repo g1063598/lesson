@@ -1,0 +1,82 @@
+/* .movies {
+    position: relative;
+    width: 730rpx;
+    height: 218rpx;
+    overflow: hidden;
+    left: 20rpx; 
+    border-bottom: 1rpx solid #D3D3D3;
+  }
+  .movie__hd {
+    display: inline-block;
+    position: absolute;
+    top: 20rpx;
+    width: 120rpx;
+    height: 180rpx;
+  }
+  .movie__hd image {
+    width: 120rpx;
+    height: 180rpx;
+  }
+  .movie__bd {
+     display: inline-block; 
+    position: absolute;
+    top: 0;
+    margin-left: 22rpx;
+    left:120rpx; 
+  }
+  .movie__bd_name {
+    display: inline-block;
+    font-size: 30rpx;
+    color:#242424;
+    font-weight: 100rpx;
+    margin-top: 30rpx;
+  }
+  .movie__bd_jd {
+    display: inline-block;
+    margin-left: 15rpx;
+    width: 110rpx;
+    font-size: 24rpx;
+    text-align: center;
+    color: #667C93; 
+    border:2rpx solid #667C93;
+  }
+  .movie__bd_introduction {
+    margin-top: 20rpx;
+    font-size: 24rpx;
+    color: #E6C79C;
+    display:block;
+    width: 410rpx;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    overflow: hidden;
+  }
+  .movie__bd_actor {
+    margin-top: 24rpx;
+    font-size: 24rpx;
+    color: #6e6e6e;
+    margin-bottom: 60rpx;
+    display:block;
+    width: 410rpx;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    overflow: hidden;
+  }
+  .movie__ft {
+    position: absolute;
+    display: inline-block;
+    right: 20rpx;
+    bottom: 28rpx;
+  }
+  .movie__ft_score {
+    margin-top: 48rpx;
+  }
+  .btn1 {
+    width: 120rpx;
+    height: 56rpx;
+    font-size: 24rpx;
+    background-color: #DEBD8F;
+    color: #FFFFFF;
+    border-radius: 60rpx;
+    display: flex;
+    align-items: center;
+  } */

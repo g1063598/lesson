@@ -1,4 +1,4 @@
-<!--pages/storage_pre/storage_pre.wxml-->
+
 <view>
     <view>
         <text>{{address}}</text>
