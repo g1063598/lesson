@@ -46,10 +46,15 @@
         <div class="imgBox">
             <img src="./asset/test.png" alt="" id="pinchImg">
         </div>
+        <div class="title">rotate</div>
+        <div class="imgBox">
+            <img src="./asset/test.png" alt="" id="rotateImg" />
+        </div>
     </div>
     <script src="./asset/alloy_finger.js"></script>
     <script src="./asset/transform.js"></script>
     <script>
+        // pinch
         var pinchImg = document.getElementById('pinchImg');
         // 将图片转化成能与之交互的图片
         Transform(pinchImg);
@@ -59,6 +64,14 @@
                 console.log("tab一下");
                 // evt 能提供放大缩小的比例
                 pinchImg.scaleX = pinchImg.scaleY = initScale*evt.zoom;
+            }
+        })
+        // rotate
+        var rotateImg = document.getElementById('rotateImg');
+        Transform(rotateImg);
+        new AlloyFinger(rotateImg,{
+            rotate: function(evt) {
+                rotateImg.rotateZ += evt.angle;
             }
         })
     </script>
