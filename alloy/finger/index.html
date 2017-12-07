@@ -36,7 +36,39 @@
         .imgBox {
             margin-bottom: 10px;
             border-bottom: 1px solid #333;
-        }   
+        } 
+        .swipeBox {
+            height: 160px;
+            width: 160px;
+            margin: 0 auto;
+            overflow: hidden;
+            font-size: 0;
+            position: relative;
+            border: 2px solid #ccc;
+            box-sizing: border-box;
+        }
+        .scroll {
+            width: 480px;
+            height: 160px;
+            white-space: nowrap;
+        }
+        .nuclear-nav {
+            position: absolute;
+            bottom: 6px;
+            right: 10px;
+        }
+        .nuclear-nav a {
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            border-radius: 5px;
+            margin-right: 5px;
+            border: 1px solid #808080;
+            background-color: white;
+        }
+        .nuclear-nav a.active {
+            background-color: #ffd800;
+        }  
     </style>
 </head>
 <body ontouchstart>
@@ -49,6 +81,21 @@
         <div class="title">rotate</div>
         <div class="imgBox">
             <img src="./asset/test.png" alt="" id="rotateImg" />
+        </div>
+        <div class="title">swipe</div>
+        <div class="imgBox pb6">
+            <div class="swipeBox">
+                <div class="scroll" id="swipeScroll">
+                    <img src="./asset/test.png" alt="">
+                    <img src="./asset/test.png" alt="">
+                    <img src="./asset/test.png" alt="">
+                </div>
+                <div class="nuclear-nav">
+                    <a href="#" data-index="0" class="active"></a>
+                    <a href="#" data-index="1"></a>
+                    <a href="#" data-index="2"></a>
+                </div>
+            </div>
         </div>
     </div>
     <script src="./asset/alloy_finger.js"></script>
@@ -74,6 +121,46 @@
                 rotateImg.rotateZ += evt.angle;
             }
         })
+        //swipe
+        // evt 事件细节 左滑动 右滑动
+        var swipeScroll = document.getElementById('swipeScroll');
+        var currentIndex = 0;
+        Transform(swipeScroll);
+        new AlloyFinger(swipeScroll,{
+            touchMove: function(evt) {
+                evt.preventDefault();
+            },
+            swipe: function(evt) {
+                console.log(evt);
+                if(evt.direction == 'Left') {
+                    if(currentIndex < 2) {
+                        currentIndex++;
+                        // swipeScroll.style.translateX
+                        new To(swipeScroll,"translateX",-160*currentIndex,500,ease,function() {
+                            activeNav(currentIndex);
+                        })
+                    }
+                } else if(evt.direction == 'Right') {
+                    if(currentIndex > 0) {
+                        currentIndex--;
+                        new To(swipeScroll,"translateX",-160*currentIndex,500,ease,function() {
+                            activeNav(currentIndex);
+                        })
+                    }
+                }
+            }
+        })
+        function activeNav(index) {
+            var items = document.querySelectorAll('.nuclear-nav a');
+            items.forEach((item,i) => {
+                if(index == i) {
+                    item.classList.add('active');
+                } else {
+                    item.classList.remove('active');
+                }
+            })
+        }
+
     </script>
 </body>
 </html>
