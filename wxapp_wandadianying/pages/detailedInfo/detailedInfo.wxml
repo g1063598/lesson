@@ -19,22 +19,26 @@
         <view class="bd__movieSynopsis">{{item.synopsis}}</view>
         <view class="bd__movieParticipants">
             <scroll-view class="scroll-view_participants" scroll-x="true">
-                <view class="content">
-                <view class="scroll-view__content">
-                    <text class="movieDirector">导演</text>
-                    <image class="directorImage" src="{{item.directorImage}}" />
-                    <text class="director">{{item.director}}</text> 
+                <view class="content" style="display:inline-block">
+                    <text class="movieDirector font">导演</text>
+                    <view class="scroll-view__content">
+                        <image class="directorImag" src="{{item.directorImage}}" />
+                        <text class="director">{{item.director}}</text> 
+                    </view>
+                    <text class="movieActors font">演员</text>
+                    <view class="scroll-view__content-actors" wx:for="{{actors}}" wx:key="{{index}}">
+                        <image class="actorImage" src="{{item.image}}"/>
+                        <text class="actor">{{item.name}}</text>
+                        <!-- <text class="role">{{item.role}}</text> -->
+                    </view>
                 </view>
-                <view class="scroll-view__content actors">
-                    <text class="movieActors">演员</text>
-                    <image class="actorImage" src=""/>
-                    <text class="actor">{{item.actors[0].name}}</text>
-                </view>
-            </view>
             </scroll-view>
         </view>
         <view class="bd__movieStills">
             <text class="image">图片</text>
+            <navigator class="numbers" url="../stills/stills?id={{item.id}}">
+                <text class="number">{{item.stillsNum}}></text>
+            </navigator>
             <scroll-view scroll-x="true" style="white-space: nowrap;display:flex">
                 <view class="stills" style="display:inline-block" wx:for="{{stills}}" wx:key="{{index}}">
                     <image class="still" src="{{item.image}}" />

@@ -3,8 +3,10 @@ const app = getApp()
 Page({
   data: {
     item: [],
-    stills: []
+    stills: [],
+    actors: []
   },
+  
   onLoad: function(params) {
     // console.log(params);
     var that = this;
@@ -19,7 +21,8 @@ Page({
         // console.log(datas[0].stills[]);
         that.setData({
           item:datas[0],
-          stills:datas[0].stills
+          stills:datas[0].stills,
+          actors: datas[0].actors
         });
       }
     })
