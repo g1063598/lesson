@@ -1,0 +1,39 @@
+/* pages/stills/stills.wxss */
+/* .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #000000;
+}
+.stills {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+}
+.still {
+    display: inline-block;
+    width: 170rpx;
+    height: 170rpx;
+} */
+.container {
+    background-color: #000000;
+    height: 2000rpx;
+    padding-left: 16rpx;
+    padding-top: 20rpx;
+    padding-right: -30rpx;
+}
+.stills {
+    background-color: #000000;
+    display: inline-block;
+    width: 170rpx;
+    height: 170rpx;
+    margin-right: 16rpx;
+    margin-bottom: 14rpx;
+}
+.still {
+    display: inline-block;
+    width: 170rpx;
+    height: 170rpx;
+    margin-right: 20rpx;
+    margin-bottom: 14rpx;
+}
