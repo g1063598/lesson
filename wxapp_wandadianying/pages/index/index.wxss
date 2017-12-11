@@ -89,7 +89,7 @@
   color: #DBB177;
   display: block;
   font-weight: bold;
-  top: 20rpx;
+  top: -180rpx;
   right: 12rpx;
   width: 80rpx;
 }
