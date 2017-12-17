@@ -173,6 +173,7 @@ Page({
 ### 3.电影详情页实现传参页面跳转
 
 ![](https://user-gold-cdn.xitu.io/2017/12/17/16064e6a5d81a859?w=290&h=508&f=gif&s=1226757)
+
 具体detailedInfo.wxml实现：
 ```
 <!--pages/detailedInfo/detailedInfo.wxml-->
