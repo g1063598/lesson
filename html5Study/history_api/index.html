@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Kittens</title>
+    <title>index</title>
     <link rel="stylesheet" href="/common.css">
 </head>
 <body>
@@ -55,6 +55,11 @@
                         // $('.photo').attr('src',$(data).find('.photo').attr('src'));
                     })
                 })
+                window.onpopstate = (event) => {
+                    if(event.state) {
+                        displayContent(event.state);
+                    }
+                }
             })
         })()
     </script>
