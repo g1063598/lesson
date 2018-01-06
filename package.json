@@ -1,0 +1,35 @@
+{
+  "devDependencies": {
+    "handlebars": "^4.0.11",
+    "handlebars-loader": "^1.6.0",
+    "mocha": "^4.1.0",
+    "should": "^13.2.0",
+    "webpack": "^3.10.0"
+  },
+  "scripts": {
+    "build": "webpack",
+    "stylus:watch": "stylus -w -m styl/ -o css/",
+    "test": "mocha --require babel-core/register"
+  },
+  "dependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
+    "bootstrap": "^3.3.7",
+    "colors.css": "2.3.0",
+    "eslint": "^4.14.0",
+    "eslint-loader": "^1.9.0",
+    "jquery": "^3.2.1",
+    "normalize.css": "^7.0.0"
+  },
+  "name": "data-picker",
+  "description": "mocha 测试框架\r should 断言库 assertion\r 应该安装在devDependencies\r 测试驱动开发 TDD\r git branch \r git checkout\r master dev test  个人开发分支\r 用测试驱动开发，test将进入我们的业务开发流程",
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
