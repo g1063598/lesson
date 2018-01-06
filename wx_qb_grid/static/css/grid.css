@@ -1,0 +1,53 @@
+/* author: nzh
+date: 17-11-28 */
+.grids {
+    position: relative;
+    overflow: hidden;
+}
+.grids:before {
+   content: "";
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   height: 1px;
+   border-top: 1px solid #E5E5E5;
+   /* 1px 问题 retina 手机 1px很粗*/
+   /* -webkit-transform: scaleY(0.5);
+   transform: scaleY(0.5);
+   -webkit-transform-origin: 0 0;
+   transform-origin: 0 0; */
+}
+.grids:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    border-bottom: 1px solid #E5E5E5;
+ }
+ .grid {
+     position: relative;
+     float: left;
+     padding: 20px 10px;
+     box-sizing: border-box;
+ }
+ .grid:before {
+     content: "";
+     position: absolute;
+     right: 0;
+     top: 0;
+     bottom: 0;
+     width: 1px;
+     border-right: 1px solid #E5E5E5;
+ }
+ .grid:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    height: 1px;
+    border-bottom: 1px solid #E5E5E5;
+}

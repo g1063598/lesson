@@ -1,0 +1,27 @@
+{
+  "name": "data-picker",
+  "version": "0.1.0",
+  "description": "mocha 测试框架\r   should 断言库 assertion\r   安装在 devDependencies\r   测试驱动开发 TDD\r   git branch\r   git checkout\r   master dev test\r   test 将进入我们的业务开发流程",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "stylus:watch": "stylus -w -m styl/ -o css/",
+    "test": "mocha --require babel-core/register"
+  },
+  "keywords": [],
+  "author": "'nzhingg' <'2258190228@qq.com'> ('https://nzhingg.github.io/')",
+  "license": "ISC",
+  "devDependencies": {
+    "mocha": "^4.1.0",
+    "should": "^13.2.0"
+  },
+  "dependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
+    "colors.css": "2.3.0",
+    "normalize.css": "^7.0.0"
+  }
+}
