@@ -1,0 +1,50 @@
+{
+  "name": "vue-todo",
+  "version": "1.0.0",
+  "description": "normalize 不是一定要打包\r - 整站开发比较多\r - 模块开发  会有很多个 /dist 目录\r - 对于通用性的模块不要乱打包，这样会造成资源的重复加载",
+  "main": "webpack.config.js",
+  "dependencies": {
+    "amdefine": "^1.0.1",
+    "babel-core": "^6.26.0",
+    "balanced-match": "^1.0.0",
+    "brace-expansion": "^1.1.8",
+    "concat-map": "^0.0.1",
+    "css-parse": "^1.7.0",
+    "debug": "^3.1.0",
+    "font-awesome": "^4.7.0",
+    "fs.realpath": "^1.0.0",
+    "glob": "^7.0.6",
+    "inflight": "^1.0.6",
+    "inherits": "^2.0.3",
+    "minimatch": "^3.0.4",
+    "minimist": "^0.0.8",
+    "mkdirp": "^0.5.1",
+    "ms": "^2.0.0",
+    "normalize.css": "^7.0.0",
+    "once": "^1.4.0",
+    "path-is-absolute": "^1.0.1",
+    "sax": "^0.5.8",
+    "source-map": "^0.1.43",
+    "stylus": "^0.54.5",
+    "vue": "^2.5.13",
+    "vue-loader": "^13.6.2",
+    "vue-style-loader": "^3.0.3",
+    "webpack": "^3.10.0",
+    "wrappy": "^1.0.2"
+  },
+  "devDependencies": {
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
+    "css-loader": "^0.28.7",
+    "stylus-loader": "^3.0.1",
+    "vue-template-compiler": "^2.5.13"
+  },
+  "scripts": {
+    "build": "",
+    "dev": "webpack",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
