@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <!-- vue renderer
+    template ->
+    pre complie
+    vue scope 
+    {{}}表示占位符 正则
+    实时编译 node
+    -->
+    <div id="app">
+        <h2>{{title}}</h2>
+        <input v-model="name">
+        <h1>{{name}}</h1>
+        <button v-on:click="clickMe">click me!</button>
+    </div>
+    <script src="./observer.js"></script>
+    <script src="./watcher.js"></script>
+    <script src="./compile.js"></script>
+    <script src="./vue.js"></script>
+    <script>
+        const vm = new Vue({
+            el: '#app',
+            data: {
+                title: 'hello world',
+                name: 'nzh'
+            },
+            methods: {
+                clickMe () {
+                    this.title = '你好！'
+                },
+                mounted () {
+                    setTimeout(() => {
+                        this.title = '吃了吗？';
+                    },1000)
+                }
+            }
+        })
+    </script>
+</body>
+</html>
