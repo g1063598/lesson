@@ -3,7 +3,7 @@
     <header class="header" :class="{'header-fixed':headerFixed}">
       <el-row>
         <el-col :span="24">
-          <el-menu default-active="5" class="el-menu-demo" mode="horizontal">
+          <el-menu default-active="1" class="el-menu-demo" mode="horizontal">
             <el-menu-item index="1">高级插件</el-menu-item>
             <el-menu-item index="2">在线商城</el-menu-item>
             <el-menu-item index="3">客户管理</el-menu-item>
@@ -23,7 +23,7 @@
       </div>
       <div class="main-right">
         <transition name="fade">
-          <router-view class="view" />  
+          <router-view class="view" > </router-view>
         </transition>
       </div>
     </main>
