@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import HelloWorld from '@/components/HelloWorld'
 import totalpages from '@/components/totalpages.vue'
 import activePublic from '@/components/activepublic.vue'
+
 import step1 from '@/pages/activePublic/step1.vue'
 import step2 from '@/pages/activePublic/step2.vue'
 import step3 from '@/pages/activePublic/step3.vue'
