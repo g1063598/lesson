@@ -2,8 +2,9 @@
   <div class="users">
     <h1>Hello Users!</h1>
     <ul>
-      <li v-for="user in users">
-        {{user}}
+      <li v-for="user in users" v-on:click="user.show = !user.show">
+        <h2>{{user.name}}</h2>
+        <h3 v-show="user.show">{{user.position}}</h3>
       </li>
     </ul>
   </div>
@@ -13,13 +14,38 @@
     name: 'users',
     data() {
       return {
-        users:["nnn","zzz","hhh"]
+        users:[
+          {name:"nnn",position:"web开发",show:false},
+          {name:"zzz",position:"web开发",show:false},
+          {name:"hhh",position:"web开发",show:false},
+          {name:"iii",position:"web开发",show:false},
+          {name:"nnn",position:"web开发",show:false},
+          {name:"ggg",position:"web开发",show:false}
+        ]
       }
     }
   }
 </script>
 <style scoped>
-  h1{
-    color: green;
+  .users {
+    width: 100%;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+  }
+  li {
+    flex-grow: 1;
+    flex-basis: 200px;
+    text-align: center;
+    padding:30px;
+    border: 1px solid #222;
+    margin: 10px;
   }
 </style>
