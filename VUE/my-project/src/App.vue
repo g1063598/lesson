@@ -6,12 +6,12 @@
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld'
+import Users from './components/Users'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Users
   },
   data() {
     return {
