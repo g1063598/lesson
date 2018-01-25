@@ -4,9 +4,10 @@
 css作用域： scoped
 
 #### 全局注册组件 
-在main.js中添加： import Users from './components/Users' 
+在main.js中添加： 
+                import Users from './components/Users' 
 
-                 Vue.component("users",Users); 
+                Vue.component("users",Users); 
 
 #### 父组件向子组件传值
 在父组件标签中v-bind:users="users"
