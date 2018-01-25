@@ -4,7 +4,9 @@
 css作用域： scoped
 
 #### 全局注册组件 
-在main.js中添加： import Users from './components/Users'  Vue.component("users",Users); 
+在main.js中添加： import Users from './components/Users' 
+
+                 Vue.component("users",Users); 
 
 #### 父组件向子组件传值
 在父组件标签中v-bind:users="users"
@@ -30,4 +32,4 @@ updated: 组件更新之后，update一旦执行完页面就展示出来了
 
 beforeDestory: 在销毁之前执行的函数
 
-destoryed: 
+destoryed: 销毁后执行的函数
