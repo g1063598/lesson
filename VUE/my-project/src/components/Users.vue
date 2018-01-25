@@ -12,16 +12,9 @@
 <script>
   export default{
     name: 'users',
+    props:["users"],
     data() {
       return {
-        users:[
-          {name:"nnn",position:"web开发",show:false},
-          {name:"zzz",position:"web开发",show:false},
-          {name:"hhh",position:"web开发",show:false},
-          {name:"iii",position:"web开发",show:false},
-          {name:"nnn",position:"web开发",show:false},
-          {name:"ggg",position:"web开发",show:false}
-        ]
       }
     }
   }

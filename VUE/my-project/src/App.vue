@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <app-header></app-header>
-    <users></users>
+    <users v-bind:users="users"></users>
     <app-footer></app-footer>
   </div>
 </template>
@@ -20,7 +20,15 @@ export default {
   },
   data() {
     return {
-      title: "这是我的第一个脚手架项目"
+      users:[
+          {name:"nnn",position:"web开发",show:false},
+          {name:"zzz",position:"web开发",show:false},
+          {name:"hhh",position:"web开发",show:false},
+          {name:"iii",position:"web开发",show:false},
+          {name:"nnn",position:"web开发",show:false},
+          {name:"ggg",position:"web开发",show:false},
+          {name:"nnn",position:"web开发",show:false}
+        ]
     }
   }
 }
