@@ -27,5 +27,5 @@ css作用域： scoped
 
 父组件向子组件传值：在父组件标签中v-bind:users="users"
                   在子组件中props:["users"] (标准写法：props:{type:string,required:true})
-传值：string number boolean
-传引用：array object
+传值：string number boolean (不会互相影响，只会改变自身)
+传引用：array object (会互相影响，一个改变了其他的都会改变)

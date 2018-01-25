@@ -1,7 +1,7 @@
 <template>
   <header>
       <p>
-          {{nzh}}
+          {{nzh}}{{title}}
       </p>
   </header>
 </template>
@@ -9,6 +9,7 @@
 <script>
 export default {
   name: 'app-footer',
+  props:["title"],
   data () {
     return {
         nzh: "nzh 2018 Vue.js Demo"
