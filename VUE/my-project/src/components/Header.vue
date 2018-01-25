@@ -17,7 +17,8 @@ export default {
   },
   methods: {
     changeTitle: function(){
-      this.title="changed";
+      // this.title="changed";
+      this.$emit("titleChanged","子向父组件传值");
     }
   }
 }

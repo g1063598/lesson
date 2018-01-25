@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <app-header v-bind:title="title"></app-header>
+    <app-header v-on:titleChanged="updateTitle($event)" v-bind:title="title"></app-header>
     <users v-bind:users="users"></users>
     <users v-bind:users="users"></users>
     <app-footer v-bind:title="title"></app-footer>
@@ -22,15 +22,20 @@ export default {
   data() {
     return {
       users:[
-          {name:"nnn",position:"web开发",show:false},
-          {name:"zzz",position:"web开发",show:false},
-          {name:"hhh",position:"web开发",show:false},
-          {name:"iii",position:"web开发",show:false},
-          {name:"nnn",position:"web开发",show:false},
-          {name:"ggg",position:"web开发",show:false},
-          {name:"nnn",position:"web开发",show:false}
-        ],
-        title:"传递的是一个值,(number string boolean)"
+        {name:"nnn",position:"web开发",show:false},
+        {name:"zzz",position:"web开发",show:false},
+        {name:"hhh",position:"web开发",show:false},
+        {name:"iii",position:"web开发",show:false},
+        {name:"nnn",position:"web开发",show:false},
+        {name:"ggg",position:"web开发",show:false},
+        {name:"nnn",position:"web开发",show:false}
+      ],
+      title:"传递的是一个值,(number string boolean)"
+    }
+  },
+  methods: {
+    updateTitle(title){
+      this.title=title;
     }
   }
 }
