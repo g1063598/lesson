@@ -1,7 +1,5 @@
-# 圣诞节即将来临，带上那个心仪的她（他）去万达看场电影吧
-![](https://user-gold-cdn.xitu.io/2017/12/18/1606545178bc4205?w=446&h=295&f=gif&s=142535)
-
-前几天和朋友约着去万达看IMAX版的正义联盟，刚好可以弄个抽奖，满60减20，无奈运气太差，让十个人帮忙抽就是抽不到，后来刚好要仿一个小程序，就想着那就万达电影吧！
+# 带上那个心仪的她（他）去万达看场电影吧
+![](https://images.unsplash.com/photo-1498609458988-7b2c70d9213a?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=d03b36311e6aaf79ea1a7ccfdc606b62&auto=format&fit=crop&w=750&q=80)
 
 ## 项目现有功能
 * 列表式渲染数据
@@ -154,7 +152,7 @@ page__ft中点击“今天”“明天”“后天”，swiper-item也随之滑�
         在onLoad函数的数据请求中设置导航条的信息，然后使用wx.setNavigationBarTitle设置数据
 
 文章到这里就结束了，欢迎一起交流学习：
-* qq: 2258190228
+* qq: 2258190228@qq.com
 * github: [万达电影](https://github.com/nzhingg/lesson/tree/master/wxapp_wandadianying)，欢迎fork,欢迎star
 
 
