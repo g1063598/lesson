@@ -6,9 +6,8 @@ Page({
         cinema: ''
     },
     chooseCinema:function(e){
-        console.log(e.currentTarget.dataset.current);
         var index = e.currentTarget.dataset.current;
-        console.log(this.data.cinemas[index]);
+        // console.log(this.data.cinemas[index]);
         wx.setStorage({
             key: "cinema",
             data:this.data.cinemas[index].cinema

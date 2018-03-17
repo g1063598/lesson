@@ -1,9 +1,11 @@
 {
   "pages":[
     "pages/index/index",
-    "pages/cinemas/cinemas",
+    "pages/ticket/ticket",
     "pages/detailedInfo/detailedInfo",
-    "pages/logs/logs"
+    "pages/cinemas/cinemas",
+    "pages/stills/stills",
+    "pages/mine/mine"
   ],
   "window":{
     "backgroundTextStyle":"black",
